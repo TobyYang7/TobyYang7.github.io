@@ -1,5 +1,5 @@
 {% if site.email %}
-  <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
+  <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope fa-xs"></i></a>
 {% endif %}
 {% if site.telegram_username %}
   <a href="https://telegram.me/{{ site.telegram_username }}" title="telegram"><i class="fa-brands fa-telegram"></i></a>
@@ -32,7 +32,7 @@
   <a href="https://www.scopus.com/authid/detail.uri?authorId={{site.scopus_id}}" title="Scopus"><i class="ai ai-scopus"></i></a>
 {% endif %}
 {% if site.github_username %}
-  <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
+  <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github fa-xs"></i></a>
 {% endif %}
 {% if site.linkedin_username %}
   <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -77,7 +77,7 @@
   <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fa-brands fa-stack-overflow"></i></a>
 {% endif %}
 {% if site.kaggle_id %}
-  <a href="https://www.kaggle.com/{{ site.kaggle_id }}" title="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+  <a href="https://www.kaggle.com/{{ site.kaggle_id }}" title="Kaggle"><i class="fa-brands fa-kaggle fa-xs"></i></a>
 {% endif %}
 {% if site.lastfm_id %}
   <a href="https://www.last.fm/user/{{ site.lastfm_id }}" title="Last FM"><i class="fa-brands fa-lastfm"></i></a>
@@ -89,7 +89,7 @@
   <a href="https://www.pinterest.com/{{ site.pinterest_id }}" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
 {% endif %}
 {% if site.unsplash_id %}
-  <a href="https://unsplash.com/@{{ site.unsplash_id }}" title="Unsplash"><i class="fa-brands fa-unsplash"></i></a>
+  <a href="https://unsplash.com/@{{ site.unsplash_id }}" title="Unsplash"><i class="fa-brands fa-unsplash fa-xs"></i></a>
 {% endif %}
 {% if site.instagram_id %}
   <a href="https://instagram.com/{{ site.instagram_id }}" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -106,9 +106,9 @@
 {% if site.zotero_username %}
   <a href="https://www.zotero.org/{{ site.zotero_username }}" title="Zotero"><i class="ai ai-zotero"></i></a>
 {% endif %}
-{% if site.rss_icon %}
+{% comment %} {% if site.rss_icon %}
   <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss"></i></a>
-{% endif %}
+{% endif %} {% endcomment %}
 {% if site.wechat_qr %}
   <a id="WeChatBtn" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
   <div id="WeChatMod" class="wechat-modal">

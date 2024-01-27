@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-1-27 12:00:00-0800
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Created this website using [al-folio](https://github.com/alshedivat/al-folio). **To be continued...**
