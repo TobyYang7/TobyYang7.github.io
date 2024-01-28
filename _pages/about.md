@@ -17,7 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, this is Toby's website. I am a year 3 undergraduate student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in **Computer Science and Engineering.** My academic journey has been focused on a wide range of subjects including Data Structure, Operating System, Computer Architecture, and Machine Learning.
+Hi, this is Toby's homepage. I am a year 3 undergraduate student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in **Computer Science and Engineering.** My academic journey has been focused on a wide range of subjects including Data Structure, Operating System, Computer Architecture, and Machine Learning.
 
 I am deeply passionate about the field of deep learning and am currently delving into **Graph Convolutional Networks (GCN), Natural Language Processing (NLP), and Large Language Models (LLM).**
 
