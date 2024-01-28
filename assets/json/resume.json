@@ -3,8 +3,8 @@
     "name": "Yuzhe YANG",
     "email": "yuzheyang@link.cuhk.edu.cn",
     "phone": "+86 18310762536",
-    "website": "https://tobyyang7.github.io/",
-    "highlights": "A junior CSE student with a keen interest in deep learning. nowly exploring GCN, LLM, and NLP.",
+    "url": "https://tobyyang7.github.io/",
+    "summary": "A junior CSE student with a keen interest in deep learning. nowly exploring GCN, LLM, and NLP.",
     "profiles": [
       {
         "network": "GitHub",
@@ -22,9 +22,11 @@
     {
       "institution": "The Chinese University of Hong Kong, Shenzhen",
       "studyType": "Bachelor of Science in Computer Science",
+      "url": "https://sds.cuhk.edu.cn/en",
       "startDate": "2021-09",
       "endDate": "2025-05",
-      "courses": ["Data Structure", "Operating System", "Computer Architecture", "Machine Learning", "Natrual Languages Processing"]
+      "courses": ["Data Structure", "Operating System", "Computer Architecture", "Machine Learning", "Natrual Languages Processing"],
+      "location": "Shenzhen, China"
     }
   ],
   "skills": [
@@ -35,10 +37,6 @@
     {
       "name": "Technologies",
       "keywords": ["Git", "VS Code", "MATLAB", "LaTeX", "Linux", "CLI"]
-    },
-    {
-      "name": "Other Tools",
-      "keywords": ["Photoshop", "Lightroom", "Office", "Power BI", "Figma"]
     }
   ],
   "work": [

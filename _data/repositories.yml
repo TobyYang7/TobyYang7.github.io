@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - TobyYang7
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - TobyYang7/nlp-tutorial
+  - TobyYang7/STPN
+  - TobyYang7/STGODE
+  - d2l-ai/d2l-zh

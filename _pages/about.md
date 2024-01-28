@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://sds.cuhk.edu.cn/en'>Year 3 UG, School of Data Science, CUHKSZ</a>
 
