@@ -128,4 +128,4 @@ These custom styles can be used by adding the specific class to the blockquote, 
 > be used carefully
 {: .block-danger }
 
-<!-- prettier-ignore-end -->
+prettier-ignore-end
