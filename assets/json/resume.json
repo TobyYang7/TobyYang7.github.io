@@ -5,18 +5,7 @@
     "phone": "+86 18310762536",
     "url": "https://tobyyang7.github.io/",
     "summary": "A junior CSE student with a keen interest in deep learning. Currently exploring GCN, LLM, and NLP.",
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "tobyyang7",
-        "url": "https://github.com/tobyyang7"
-      },
-      {
-        "network": "Kaggle",
-        "username": "tobyyang7",
-        "url": "https://www.kaggle.com/tobyyang7"
-      }
-    ]
+    "locations": "Shenzhen & Beijing, China"
   },
   "education": [
     {
@@ -57,19 +46,22 @@
         " Deep Learning, GNN, GCN, PyTorch, PyTorch Geometric."
       ],
       "startDate": "2023-08",
-      "endDate": "2023-11"
+      "endDate": "2023-11",
+      "summary": "A novel deep learning model for the prediction of airport network delays, which is SOTA in the field."
     },
     {
       "name": "Research in Conditional Spatio-Temporal Graph",
       "startDate": "2024-01",
       "endDate": "now",
-      "location": "SDS, CUHKSZ"
+      "highlights": [
+        "ODE Nerual Networks",
+        " Deep Learning, GNN, GCN, PyTorch, PyTorch Geometric."
+      ]
     },
     {
       "name": "Deep Learning Approach for Early Predicting and Controlling Network Flow in SDN",
       "startDate": "2024-01",
-      "endDate": "now",
-      "location": "ICNLAB, PKUSZ"
+      "endDate": "now"
     },
     {
       "name": "MCM: Evaluation Model of Light Pollution by Multi-conditional AHP",
@@ -80,7 +72,8 @@
         " Analyzed the level of light pollution in the area by population data, regional income data, etc.",
         " Explored the multifaceted impacts of light pollution on the region. ",
         "GeoPandas, Folium."
-      ]
+      ],
+      "summary": "This project aims to evaluate the level of light pollution by using mathematical modeling and GIS data analysis."
     },
     {
       "name": "Kaggle: Open Problems - Multimodal Single-Cell Integration",
