@@ -10,3 +10,4 @@ Gemfile.lock
 node_modules/
 vendor
 .gz
+_posts copy/

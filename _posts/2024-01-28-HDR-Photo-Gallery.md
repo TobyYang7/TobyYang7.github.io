@@ -6,6 +6,7 @@ description: This is a photo gallery of HDR photos.
 tags: images
 categories: plog
 chart: false
+thumbnail: assets/img/HDR-photo-gallery/HDR 图像 1.avif
 ---
 
 This is a photo gallery of HDR photos. If your screen supports HDR display, you can see the difference between HDR and non-HDR photos. If not, you can check your browser for HDR support [here](https://caniuse.com/avif).
