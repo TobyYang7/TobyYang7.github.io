@@ -1,0 +1,125 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+% \usepackage{xeCJK}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\newdateformat{monthyearformat}{\shortmonthname[\THEMONTH], \THEYEAR}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\scriptsize \textit{Last updated: \monthyearformat\today}}
+\lfoot{\scriptsize \textit{yuzheyang@link.cuhk.edu.cn}}
+\fancyfoot[C]{\scriptsize \thepage}
+
+\setlength{\parindent}{0pt}
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{26,13,171}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Customize section command
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+
+% Customize itemize environment
+\setlist[itemize]{left=1.5em,label=--,itemsep=0.5em}
+
+% Customize hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,
+    urlcolor=darkblue,
+}
+
+% Define custom commands for personal information
+\newcommand{\name}[1]{\noindent\textbf{\LARGE #1}\vspace{0.5em}\hrule\vspace{1em}}
+\newcommand{\contact}[2]{\noindent\textcolor{gray}{#1:} #2\par}
+
+\begin{document}
+
+\name{Yuzhe YANG 阳雨哲}
+
+\contact{\textbf{About Me}}{\textbf{\\A junior CSE student with a keen interest in deep learning. Currently exploring GCN, LLM, and NLP.}}
+% \contact{Avaliable Time}{Jan 2024 - Mar 2024}
+\contact{Email}{yuzheyang@link.cuhk.edu.cn}
+\contact{Phone}{+86 18310762536}
+\contact{GitHub}{\href{https://github.com/tobyyang7}{github.com/tobyyang7}}
+\contact{Kaggle}{\href{https://www.kaggle.com/tobyyang7}{kaggle.com/tobyyang7}}
+\contact{Homepage}{\href{https://tobyyang7.github.io/}{tobyyang7.github.io  (to be continued...)}}
+
+\section*{Education}
+\textbf{The Chinese University of Hong Kong, Shenzhen\\ \textit{School of Data Science}} \hfill \textit{Expected Graduation: May 2025}\\
+Bachelor of Science in Computer Science\\
+\textit{Core Curriculums:} Data Structure, Operating System, Computer Architecture, Machine Learning, etc.
+
+% \section*{Biography}
+
+\section*{Skills}
+\textbf{Programming Languages:} Python, PyTorch, C++, RISC-V, HTML, JavaScript, React\\
+\textbf{Technologies:} Git, VS Code, MATLAB, \LaTeX, Linux, CLI\\
+\textbf{Other Tools:} Photoshop, Lightroom, Office, Power BI, Figma\\
+\textbf{Languages:} English (Fluent), Mandarin (Native)\\
+\textbf{Hobbies:} Photography, Sports
+
+\section*{Work Experiences}
+\textbf{China Telecom Beijing Research Institute} \hfill \textit{Jan 2024 - Mar 2024}\\
+- Intern at the AI Large Model Research Team\\
+- Analyze a technology's trends, applications, and industry impact
+
+\section*{Research Experiences}
+\textbf{FAST-CA: Fusion-based Adaptive Spatio-Temporal Learning with Coupled Attention for Airport Network Delay Propagation Prediction} \hfill \textit{Aug 2023 - Nov 2023}\\
+SDS, CUHKSZ\\
+- Advised by \textbf{Prof.\@ Jianfeng Mao}, submitted to the \textbf{\textit{Information Fusion}} journal\\
+- Refined the deep learning model for the prediction of airport network delays\\
+- Spatio-temporal data analysis and illustration\\
+- Deep Learning, GNN, GCN, PyTorch, PyTorch Geometric\\
+\\
+\textbf{Research in Conditional Spatio-Temporal Graph} \hfill \textit{Jan 2024 - Current}\\
+SDS, CUHKSZ\\
+\\
+\textbf{Deep Learning Approach for Early Predicting and Controlling Network Flow in SDN} \hfill \textit{Jan 2024 - Current}\\
+ICNLAB, PKUSZ\\
+
+
+\section*{Projects Experiences}
+\textbf{\textit{MCM:} Evaluation Model of Light Pollution by Multi-conditional AHP} \hfill \textit{Feb 2023}\\
+- GIS-data analysis, Mathematical modeling\\
+- Analyzed the level of light pollution in the area by population data, regional income data, etc.\\
+- Explored the multifaceted impacts of light pollution on the region\\
+- GeoPandas, Folium\\
+\\
+\textbf{\textit{Kaggle:} Open Problems - Multimodal Single-Cell Integration} \hfill \textit{Feb 2022 - Apr 2022}\\
+- Machine Learning, Data Analysis\\
+- Predict how DNA, RNA \& protein measurements co-vary in single cells\\
+- Silver Medal\\
+\\
+\textbf{\textit{Kaggle:} Happywhale - Whale and Dolphin Identification} \hfill \textit{Aug 2022 - Nov 2022}\\
+- Machine Learning, Data Analysis\\
+- Identify whales and dolphins by unique characteristics\\
+- Silver Medal\\
+\\
+\textbf{Game Theory Analysis of SEO Strategies: From Methods to Models} \hfill \textit{Nov 2023 - Dec 2023}\\
+- Search Engine Optimization\\
+- Game theory modeling\\
+\\
+\textbf{Machine Learning Project \textit{(in class)}} \hfill \textit{Feb 2023 -- May 2023}\\
+- Data Analysis, Data Visualization\\
+- Python: numpy, pandas, matplotlib, sklearn, scipy, etc\\
+- Implemented model: Linear Regression, SVM, Decision Tree, K-Means, PCA, etc.\\
+\\
+\textbf{CPU Circuit design \textit{(in class)}} \hfill \textit{Jul 2023}\\
+- Verilog, RISC-V\\
+- Implemented simple RISC-V instructions through circuit design and realized CPU pipelining
+
+\section*{Activities}
+\textbf{MUSE College Student Assistant: Outstanding College Contribution Award} \hfill \textit{Sep 2021 - Sep 2023}\\
+\textbf{MUSE College Basketball Team} \hfill \textit{Sep 2021 - Sep 2023}\\
+\textbf{P.I.C. Photography Club} \hfill \textit{Sep 2021 - Jun 2022}
+
+
+\end{document}
