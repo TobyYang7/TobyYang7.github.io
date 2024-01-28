@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://TobyYang7.github.io/sitemap.xml
