@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Yuzhe
-middle_name: 
+middle_name:
 last_name: YANG
 email: tobyyang7@foxmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -18,7 +18,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://TobyYang7.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -95,7 +95,7 @@ kaggle_id: TobyYang7 # your kaggle id
 lastfm_id: # your lastfm id
 spotify_id: # your spotify id
 pinterest_id: # your pinterest id
-unsplash_id: TobyYang  # your unsplash id
+unsplash_id: TobyYang # your unsplash id
 instagram_id: # your instagram id
 facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
@@ -104,7 +104,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  <p>Feel free to contact me if you have any questions or suggestions.</p>  
+  <p>Feel free to contact me if you have any questions or suggestions.</p>
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -157,9 +157,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
