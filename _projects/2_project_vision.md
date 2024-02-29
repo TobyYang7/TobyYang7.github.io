@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Vision
-description: This is a LaTex report template for CUHKSZ students.
+description: To bring cutting-edge image recognition to real-time camera feeds
 img: assets/img/project/vision.png
 importance: 1
 category: school
