@@ -12,6 +12,8 @@ related_publications: false
 
 This project leverages the advanced capabilities of the [MiniCPM-V](https://github.com/TobyYang7/Vision/blob/main/MiniCPM-V/README.md) (i.e., OmniLMM-3B), to bring cutting-edge image recognition to real-time camera feeds. By harnessing the power of this model, the application can analyze and understand scenes captured by the camera, providing instant feedback on what it perceives. You can modify the prompt to see how the model responds to different inputs.
 
+GitHub repository: [Vision](https://github.com/TobyYang7/Vision)
+
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/project/vision.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
