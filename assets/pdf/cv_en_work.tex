@@ -1,5 +1,5 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[left=0.3in,right=0.3in,top=0.3in,bottom=0.5in]{geometry}
+\usepackage[left=0.3in,right=0.3in,top=0.3in,bottom=0.3in]{geometry}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
@@ -11,15 +11,21 @@
 \usepackage{bibentry}
 \usepackage{natbib}
 \usepackage{titlesec}
-\newdateformat{monthyearformat}{\shortmonthname[\THEMONTH], \THEYEAR}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}
-\rfoot{\scriptsize \textit{Last updated: \monthyearformat\today}}
-\lfoot{\scriptsize \textit{yuzheyang@link.cuhk.edu.cn}}
-\fancyfoot[C]{\scriptsize \thepage}
+
+% \newdateformat{monthyearformat}{\shortmonthname[\THEMONTH], \THEYEAR}
+% \pagestyle{fancy}
+% \renewcommand{\headrulewidth}{0pt}
+% \rfoot{\scriptsize \textit{Last updated: \monthyearformat\today}}
+% \lfoot{\scriptsize \textit{yuzheyang@link.cuhk.edu.cn}}
+% \fancyfoot[C]{\scriptsize \thepage}
+
+\pagestyle{empty}
+
+\usepackage{setspace}
+\setstretch{0.9}
 
 \titleformat{\section}{\Large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{0.5em}{0.5em}
+\titlespacing*{\section}{0pt}{0.4em}{0.5em}
 
 \setlength{\parindent}{0pt}
 
@@ -48,7 +54,7 @@
 
 \begin{document}
 
-\newcommand{\name}[1]{\noindent\textbf{\LARGE #1}\vspace{0em}}
+\newcommand{\name}[1]{\noindent\textbf{\LARGE #1}\vspace{0.5em}}
 
 \begin{center}
     
@@ -56,6 +62,7 @@
 
 \contact{Email}{yuzheyang@link.cuhk.edu.cn} ｜ \contact{Phone}{+86 18310762536} ｜ \contact{Homepage}{\href{https://tobyyang7.github.io/}{tobyyang7.github.io}}
 
+\vspace*{.2em}
 \textbf{A Year 3 CSE student with a keen interest in deep learning. Currently exploring GCN, LLM, and NLP.\\}
 % \contact{Avaliable Time}{Jan 2024 - Mar 2024}
 
@@ -63,7 +70,7 @@
 
 \section*{Education}
 \textbf{School of Data Science} | \textbf{The Chinese University of Hong Kong, Shenzhen} \hfill \textit{Sep 2021 - May 2025}\\
-B.Eng. in Computer Science and Engineering\\
+\textbf{B.Eng.} in Computer Science and Engineering\\
 \textbf{Core Curriculums:}
 Data Structure | Operating System |  Computer Architecture |  Machine Learning | Optimization |  NLP
 
@@ -71,14 +78,13 @@ Data Structure | Operating System |  Computer Architecture |  Machine Learning |
 
 \section*{Skills}
 \textbf{Programming Languages:} Python | PyTorch | C++ | RISC-V | HTML | JavaScript |  React\\
-\textbf{Technologies:} Git｜VS Code ｜ MATLAB ｜ \LaTeX ｜ Linux｜ CLI\\
-\textbf{Other Tools:} Photoshop | Lightroom | Office | Power BI | Figma\\
+\textbf{Technologies:} Git | VS Code | MATLAB | \LaTeX | Linux | CLI\\
 \textbf{Languages:} English (Fluent) | Mandarin (Native)
 % \textbf{Hobbies:} Photography, Sports
 
 \section*{Work Experiences}
 \textbf{China Telecom Beijing Research Institute} \hfill \textit{Jan 2024 - Mar 2024}\\
-Remote Internship \hfill Beijing, China\\
+\textit{Remote Internship} \hfill Beijing, China\\
 - Intern at the AI Large Model Research Team\\
 - Analyze a technology's trends, applications, and industry impact\\
 \textbf{Shenzhen Branch of China Telecom} \hfill \textit{Jan 2024 - Now}\\
@@ -88,20 +94,20 @@ Part-time Internship \hfill Shenzhen, China\\
 
 \section*{Publication}
 \textbf{\href{https://www.sciencedirect.com/science/article/pii/S1566253524001040}{FAST-CA: Fusion-based Adaptive Spatio-Temporal Learning with Coupled Attention for Airport Network Delay Propagation Prediction}} \hfill \textit{Aug 2023 - Nov 2023}\\
-Undergraduate Research Assistant \hfill SDS, CUHK(SZ)\\
-- Advised by \textbf{\href{https://sds.cuhk.edu.cn/en/teacher/268}{Prof.\@ Jianfeng Mao}}, accepted by  \textbf{\href{https://www.sciencedirect.com/science/article/pii/S1566253524001040}{Information Fussion}}\\
+\textit{Undergraduate Research Assistant} \hfill SDS, CUHK(SZ)\\
+- Advised by \textbf{\href{https://sds.cuhk.edu.cn/en/teacher/268}{Prof.\@ Jianfeng Mao}}, accepted by \textbf{\href{https://www.sciencedirect.com/science/article/pii/S1566253524001040}{Information Fussion}}\\
 - Refined the deep learning model for the prediction of airport network delays\\
 - Implemented baseline models and measure the performance of the proposed model\\
 - Spatio-temporal data analysis and illustration\\
 - Deep Learning, Graph Neural Network, PyTorch, PyTorch Geometric
 \section*{Research Experiences}
 \textbf{Research in Continuous Spatio-Temporal Graph} \hfill \textit{Jan 2024 - Now}\\
-Undergraduate Research Assistant \hfill SDS, CUHK(SZ)\\
+\textit{Undergraduate Research Assistant} \hfill SDS, CUHK(SZ)\\
 - Implemented a conditional spatio-temporal graph model for traffic flow prediction\\
 - Proposed a novel method to construct continuous graphs using Ordinary Differential Equations\\
 - Time convolutional graph neural network\\
 \textbf{Deep Learning Approach for Early Predicting and Controlling Network Flow in SDN} \hfill \textit{Jan 2024 - Now}\\
-Research Internship \hfill ICNLAB, PKU(SZ)\\
+\textit{Research Internship} \hfill ICNLAB, PKU(SZ)\\
 - Developed a novel network flow prediction method using a modified Informer architecture for Software-Defined Networks\\
 - Designed and implemented a proactive congestion management strategy based on the predictions\\
 - Conducted practical experiments in a simulated environment to validate the effectiveness of the proposed method\\
@@ -125,25 +131,25 @@ Research Internship \hfill ICNLAB, PKU(SZ)\\
 \textbf{AI-Based Flight Delay  Insurance Recommendation System} \hfill \textit{Jun 2024 - Now}\\
 - Predict flight delays and recommend personalized travel insurance, in order to improve customer satisfaction\\
 - Utilized deep Learning, NLP, and sentiment analysis for accurate delay predictions and customer sentiment assessment\\
-\textbf{Open Problems - Multimodal Single-Cell Integration | Kaggle} \hfill \textit{Feb 2022 - Apr 2022}\\
-- Machine Learning, Data Analysis\\
-- Predict how DNA, RNA \& protein measurements co-vary in single cells\\
-- Silver Medal\\
-\textbf{Happywhale - Whale and Dolphin Identification | Kaggle} \hfill \textit{Aug 2022 - Nov 2022}\\
-- Machine Learning, Data Analysis\\
-- Identify whales and dolphins by unique characteristics\\
-- Silver Medal\\
+% \textbf{Open Problems - Multimodal Single-Cell Integration | Kaggle} \hfill \textit{Feb 2022 - Apr 2022}\\
+% - Machine Learning, Data Analysis\\
+% - Predict how DNA, RNA \& protein measurements co-vary in single cells\\
+% - Silver Medal\\
+% \textbf{Happywhale - Whale and Dolphin Identification | Kaggle} \hfill \textit{Aug 2022 - Nov 2022}\\
+% - Machine Learning, Data Analysis\\
+% - Identify whales and dolphins by unique characteristics\\
+% - Silver Medal\\
 \textbf{Machine Learning Project \textit{(in class)}} \hfill \textit{Feb 2023 -- May 2023}\\
 - Data Analysis, Data Visualization\\
 - Python: numpy, pandas, matplotlib, sklearn, scipy, etc\\
 - Implemented model: Linear Regression, SVM, Decision Tree, K-Means, PCA, etc.\\
-\textbf{CPU Circuit design \textit{(in class)}} \hfill \textit{Jul 2023}\\
-- Verilog, RISC-V\\
-- Implemented simple RISC-V instructions through circuit design and realized CPU pipelining
+% \textbf{CPU Circuit design \textit{(in class)}} \hfill \textit{Jul 2023}\\
+% - Verilog, RISC-V\\
+% - Implemented simple RISC-V instructions through circuit design and realized CPU pipelining
 
-\section*{Activities}
-\textbf{MUSE College Student Assistant: Outstanding College Contribution Award} \hfill \textit{Sep 2021 - Sep 2023}\\
-\textbf{MUSE College Basketball Team} \hfill \textit{Sep 2021 - Sep 2023}\\
-\textbf{P.I.C. Photography Club} \hfill \textit{Sep 2021 - Jun 2022}
+% \section*{Activities}
+% \textbf{MUSE College Student Assistant: Outstanding College Contribution Award} \hfill \textit{Sep 2021 - Sep 2023}\\
+% \textbf{MUSE College Basketball Team} \hfill \textit{Sep 2021 - Sep 2023}\\
+% \textbf{P.I.C. Photography Club} \hfill \textit{Sep 2021 - Jun 2022}
 
 \end{document}
