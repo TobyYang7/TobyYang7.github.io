@@ -7,10 +7,10 @@ subtitle: <a href='https://sds.cuhk.edu.cn/en'>Year 3 UG, School of Data Science
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_new.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <div style="font-size: small; text-align: center;">Beijing, 2021 Winter</div>
+    <div style="font-size: small; text-align: center;"></div>
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"

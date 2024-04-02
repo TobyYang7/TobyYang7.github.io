@@ -7,8 +7,8 @@ categories: research
 chart: false
 disqus_comments: true
 mermaid:
-  enabled: true
-  zoomable: true
+    enabled: true
+    zoomable: true
 ---
 
 MTGNN结构图，尝试用mermaid实现并部署在个人blog上，算是近一周学习的总结
@@ -65,7 +65,7 @@ sequenceDiagram
 ```
 ````
 
-```mermaid
+```mermaid[preview]
 sequenceDiagram
     participant John
     participant Alice
