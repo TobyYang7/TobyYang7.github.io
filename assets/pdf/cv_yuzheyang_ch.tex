@@ -1,0 +1,131 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.3in,right=0.3in,top=0.3in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+% \usepackage{xeCJK}
+\usepackage{ctex}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{bibentry}
+\usepackage{natbib}
+\usepackage{titlesec}
+
+\newdateformat{monthyearformat}{\shortmonthname[\THEMONTH], \THEYEAR}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\scriptsize \textit{Last updated: \monthyearformat\today}}
+\lfoot{\scriptsize \textit{yuzheyang@link.cuhk.edu.cn}}
+\fancyfoot[C]{\scriptsize \thepage}
+
+\pagestyle{empty}
+
+\usepackage{setspace}
+\setstretch{1.1}
+
+\titleformat{\section}{\Large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.5em}{0.4em}
+
+\setlength{\parindent}{0pt}
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{26,13,171}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Customize section command
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+
+% Customize itemize environment
+\setlist[itemize]{left=1.5em,label=--,itemsep=0.5em}
+
+% Customize hyperlinks
+\hypersetup{
+    % colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,
+    urlcolor=darkblue,
+}
+
+% Define custom commands for personal information
+% \newcommand{\name}[1]{\noindent\textbf{\LARGE #1}\vspace{0.5em}\hrule\vspace{1em}}
+\newcommand{\contact}[2]{\noindent\textcolor{gray}{#1:} #2}
+
+\begin{document}
+
+\newcommand{\name}[1]{\noindent\textbf{\LARGE #1}\vspace{0.5em}}
+
+\begin{center}
+    
+\name{Yuzhe Yang | 阳雨哲}
+
+\contact{Email}{yuzheyang@link.cuhk.edu.cn} ｜ \contact{Phone}{+86 18310762536} ｜ \contact{Homepage}{\href{https://tobyyang7.github.io/}{tobyyang7.github.io}}
+
+\vspace*{.2em}
+\textbf{A 3rd-year CSE student with a keen interest in deep learning. Currently exploring GCN, LLM, and NLP.\\}
+% \contact{Avaliable Time}{Jan 2024 - Mar 2024}
+
+\end{center}
+
+\section*{教育经历}
+\textbf{数据科学学院} | \textbf{香港中文大学(深圳)} \hfill \textit{2021年9月 - 2025年5月}\\
+\textbf{工学士：} 计算机科学与工程\\
+\textbf{主要课程：}
+数据结构 | 操作系统 | 计算机体系结构 | 机器学习 | 最优化 | 自然语言处理
+
+\section*{技能}
+\textbf{编程语言：} Python | PyTorch | C++ | RISC-V | HTML | JavaScript | React\\
+\textbf{技术：} Git | VS Code | MATLAB | \LaTeX | Linux | CLI\\
+\textbf{语言：} 英语 | 普通话
+
+\section*{发表论文}
+\href{https://www.sciencedirect.com/science/article/pii/S1566253524001040}{\textbf{FAST-CA: Fusion-based Adaptive Spatio-Temporal Learning with Coupled Attention for Airport Network Delay Propagation Prediction, Information Fusion, 2024, 107:102326 [online]}} \hfill \textit{2023年8月 - 2023年11月}\\
+\textit{本科研究助理，指导教师 \textbf{\href{https://sds.cuhk.edu.cn/en/teacher/268}{Prof.\@ Jianfeng Mao}}} \hfill SDS, CUHK(SZ)\\
+- 改进了机场网络延迟预测的深度学习模型\\
+- 实现了基线模型并测量所提出模型的性能\\
+- 时空数据分析和可视化分析\\
+- 机场延迟预测领域的SOTA（最优）模型\\
+- 深度学习，图神经网络，PyTorch，PyTorch Geometric
+
+\section*{研究经历}
+\textbf{Research in Continuous Spatio-Temporal Graph} \hfill \textit{2024年1月 - 现在}\\
+\textit{本科研究助理} \hfill SDS, CUHK(SZ)\\
+- 实施了一个用于交通流预测的条件时空图模型\\
+- 提出了一种使用常微分方程构建连续图的新方法\\
+- 时间卷积图神经网络\\
+\textbf{Deep Learning Approach for Early Predicting and Controlling Network Flow in SDN} \hfill \textit{2024年1月 - 2024年5月}\\
+\textit{研究实习生} \hfill ICNLAB, PKU(SZ)\\
+- 使用改进的Informer架构为软件定义网络开发了一种新的网络流预测方法\\
+- 设计并实施了一种基于预测的主动拥堵管理策略\\
+- 在模拟环境中进行实际实验以验证所提方法的有效性\\
+- 深度学习，时间序列分析，PyTorch
+
+\section*{项目经验}
+\textbf{多条件AHP光污染评估模型 | MCM} \hfill \textit{2023年2月}\\
+- GIS数据分析，数学建模\\
+- 通过人口数据、区域收入数据等分析区域的光污染水平\\
+- 探讨光污染对该地区的多方面影响\\
+- 使用GeoPandas和Folium等GIS可视化工具，展示了光污染的地理分布和严重程度，使研究结果更直观和易于理解\\
+\textbf{SEO策略的博弈论分析：从方法到模型} \hfill \textit{2023年10月 - 2023年12月}\\
+- 研究并实施多种搜索引擎优化（SEO）策略以提高网站排名\\
+- 开发并验证了一种新的排名算法，结合了关键词频率、流量和链接\\
+- 将博弈论原理应用于SEO，包括模拟$\alpha$-随机行走和纳什均衡分析\\
+- 提出了一种多阶段策略以应对SEO的动态性\\
+\textbf{基于AI的航班延误保险推荐系统} \hfill \textit{2024年2月 - 现在}\\
+- 预测航班延误并推荐个性化旅行保险，以提高客户满意度\\
+- 利用深度学习、自然语言处理和情感分析进行准确的延误预测和客户情感评估\\
+- 通过客户反馈和情感分析，持续优化推荐系统，以提高客户满意度和保险购买率\\
+\textbf{金融大型语言模型} \hfill \textit{2024年2月 - 现在}\\
+- 根据新闻、公司公告等金融文本信息，使用大型语言模型进行情感分析，以预测股市趋势\\
+- 设计了一个交互式代理，使基于情感的预测模型可供非技术用户使用\\
+- 调优模型以优化预测准确性\\
+\textbf{机器学习 \textit{（课程项目）}} \hfill \textit{2023年2月 -- 2023年5月}\\
+- 基础理论学习，数据分析，数据可视化\\
+- Python: numpy, pandas, matplotlib, sklearn, scipy 等\\
+- 实现的模型：线性回归，支持向量机（SVM），决策树，K-均值聚类，主成分分析（PCA）等\\
+
+
+
+
+\end{document}
