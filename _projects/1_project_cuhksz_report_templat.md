@@ -3,7 +3,7 @@ layout: page
 title: CUHKSZ LaTex Report Template
 description: This is a LaTex report template for CUHKSZ students.
 img: assets/img/project/1_project_cover.png
-importance: 1
+importance: 3
 category: school
 related_publications: false
 ---

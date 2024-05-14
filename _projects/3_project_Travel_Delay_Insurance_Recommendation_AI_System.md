@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Travel Delay Insurance Recommendation AI System
-description: In this project, we designed an AI system to identify potential travel insurance intentions of customers. Our designed large language model (LLM), named Insurance-GPT, is capable of analyzing in real-time during interactions with users and it utilizes deep learning model to accurately predict flight delay. This provides a good user experience, as well as provides a reference for pricing strategies to insurance companies. The Insurance-GPT can be downloaded at https://modelscope.cn/models/TobyYang7/ InsuranceGPT. Additionally, the complete source code for this project is available on GitHub at https://github.com/TobyYang7/ Travel-Insurance-Recommendation-AI-System.
+description: In this project, we designed an AI system to identify potential travel insurance intentions of customers. Our designed large language model (LLM), named Insurance-GPT, is capable of analyzing in real-time during interactions with users and it utilizes deep learning model to accurately predict flight delay.
 img: assets/img/project/bg.svg
 importance: 1
 category: school

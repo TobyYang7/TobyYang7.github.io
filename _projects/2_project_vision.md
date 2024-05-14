@@ -3,7 +3,7 @@ layout: page
 title: Vision
 description: To bring cutting-edge image recognition to real-time camera feeds
 img: assets/img/project/vision.png
-importance: 1
+importance: 2
 category: school
 related_publications: false
 ---
