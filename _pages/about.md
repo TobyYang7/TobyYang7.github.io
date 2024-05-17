@@ -13,8 +13,8 @@ profile:
     <div style="font-size: small; text-align: center;"></div>
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+selected_papers: true # includes a list of selected papers
 ---
 
 Hi, this is Toby's homepage. I am a year 3 undergraduate student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in **Computer Science and Engineering.** My academic journey has been focused on a wide range of subjects including Data Structure, Operating System, Computer Architecture, and Machine Learning.
