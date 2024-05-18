@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 1
 cv_pdf: cv_yuzheyang.pdf
-description: 
+description: For more details, please download my PDF resume
 toc:
   sidebar: left
 redirect:
