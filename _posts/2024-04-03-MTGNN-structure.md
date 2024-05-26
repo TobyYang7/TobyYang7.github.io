@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MTGNN structure
-date: 2024-04-03 01:0:00 +0800     
+date: 2024-04-03 01:00:00 +0800     
 tags: code
 categories: research
 chart: false
