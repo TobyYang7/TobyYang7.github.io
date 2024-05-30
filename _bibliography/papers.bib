@@ -23,22 +23,26 @@ selected={true}
   author       = {Yuzhe Yang and Kangqi Yu and Juanquan Peng},
   title        = {Quant-GPT: Money is All You Need},
   year         = {2024},
-  journal = {CSC6052 Final Project},
   code          = {https://github.com/TobyYang7/Quant-GPT},
   poster={Quant-GPT_poster.pdf},
   preview={Quant-GPT.png},
   pdf={Quant_GPT_final_report.pdf},
   note={A Large Language Model for A-share Market Investment},
-  abstract={The core recipe of Quant-GPT is to leverage both distilled sentiment analysis data from ChatGPT and real-world announcements from the A shares market in the supervised finetuning stage. This is not only because purely using ChatGPTdistilled data might cause "model collapse" and the weak causality between sentiment and expected return, but also because real-world data from the A shares market reflects the common expectation of all the investors.
-
-To synergize the strengths of finance news, we introduce RAG (Retrieval-Augmented Generation) where a searching tool is designed to retrieve related news of company announcements, assisting Quant-GPT make more accurate judgments on the expected return of the announcement.}
+  abstract={This paper introduces Quant-GPT, a novel multi-agent optimized for Ashare market investment decisions. Leveraging a fine-tuning combination of
+distilled sentiment analysis from ChatGPT and real-world market data, the
+prediction agent of Quant-GPT addresses the challenges of model collapse
+and weak causality between sentiment and expected returns. Our methodology integrates a Retrieval-Augmented Generation (RAG) agent and summary agent, enabling the model to access relevant news articles and corporate announcements summary with concise investment information to enhance investment decision-making. The inclusion of diverse datasets and
+RAG significantly improves the model’s ability to forecast market trends and
+returns accurately. Experimental results demonstrate Quant-GPT’s superior performance over existing open-source LLMs in terms of annualized return, maximum draw-down, and Sharpe ratio. These findings underscore
+the potential of advanced language models in financial applications, providing a robust framework for integrating natural language understanding
+with quantitative investment strategies. The code is available on GitHub:
+https://github.com/TobyYang7/Quant-GPT}
 }
 
 @article{yang2024insurancegpt,
   author       = {Yuzhe Yang and Haoqi Zhang and Zhidong Peng and Yilin Guo and Tianji Zhou},
   title        = {Travel Insurance Recommendation AI System Based on Flight Delay Predictions and Customer Sentiment},
   year         = {2024},
-  journal = {IBA4315 Final Project},
   code          = {https://github.com/TobyYang7/Travel-Insurance-Recommendation-AI-System},
   slides          = {https://cuhko365-my.sharepoint.com/:p:/g/personal/121020064_link_cuhk_edu_cn/EeZSiXgHQB9Dq-2wFqcVypUBuUREppF42pGmyjBsHWRVqw?e=6h7Zxc&nav=eyJzSWQiOjM1MCwiY0lkIjoyMDI3ODI4Nzk3fQ},
   pdf={Travel_Delay_Insurance_Recommendation_AI_System.pdf},
