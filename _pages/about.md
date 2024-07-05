@@ -3,8 +3,6 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  <a><img src="https://komarev.com/ghpvc/?username=TobyYang7"></a>
-  <br>
   <a href='https://sds.cuhk.edu.cn/en'>Senior Student, School of Data Science, CUHKSZ</a>
 
 
@@ -21,16 +19,15 @@ social: true # includes social icons at the bottom of the page
 selected_papers: true # includes a list of selected papers
 ---
 
+
 ## About Me
 
-Hi, this is Toby's homepage. I am a year 3 undergraduate student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in **Computer Science and Engineering (Artificial Intelligence Stream).**
-
-I am deeply passionate about the field of deep learning and currently exploring technologies like **Graph Neural Networks (GNN) and Large Language Models (LLM).** Additionally, I am experimenting with integrating LLM with graph to explore new possibilities.
-
-I am always open to new learning opportunities and collaborations in the field of deep learning and related technologies. Feel free to reach out to me through my [GitHub](https://github.com/tobyyang7) or [Kaggle](https://www.kaggle.com/tobyyang7) profiles.
-
-## GitHub Stats
-
-![](https://ghchart.rshah.org/TobyYang7)
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=TobyYang7&show_icons=true&theme=transparent)
+![](https://komarev.com/ghpvc/?username=TobyYang7) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftobyyang7.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
+><span style="font-size: 17px;">Hi, this is Toby's homepage. I am a year 3 undergraduate student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in **Computer Science and Engineering (Artificial Intelligence Stream).**</span>
+>
+><span style="font-size: 17px;">I am deeply passionate about the field of deep learning and currently exploring technologies like **Graph Neural Networks (GNN) and Large Language Models (LLM).** Additionally, I am experimenting with integrating LLM with graph to explore new possibilities.</span>
+>
+><span style="font-size: 17px;">I am always eager to explore new learning opportunities and engage in collaborations within the realm of deep learning and associated technologies. If you’re interested in discussing potential projects or exchanging ideas, you can connect with me via my [GitHub](https://github.com/tobyyang7) or [Kaggle](https://www.kaggle.com/tobyyang7) profiles.</span>
+>
+><span style="font-size: 17px;">For further inquiries or to start a conversation, please contact me at **yuzheyang [AT] link [DOT] cuhk [DOT] edu [DOT] cn** and view my resume [here](https://tobyyang7.github.io/assets/pdf/cv_yuzheyang_1.pdf).</span>
