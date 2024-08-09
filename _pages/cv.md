@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: true
+nav: false
 nav_order: 1
 cv_pdf: cv_yuzheyang_1.pdf
 description: For more details, please download my PDF resume
