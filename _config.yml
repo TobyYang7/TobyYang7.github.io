@@ -352,7 +352,7 @@ imagemagick:
     - ".gif"
     - ".avif"
   output_formats:
-    jpeg: "-quality 100 -colorspace RGB -define jpeg:colorspace=RGB"
+    webp: "-quality 85"
 
 # -----------------------------------------------------------------------------
 # Optional Features
