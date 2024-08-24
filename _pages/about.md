@@ -24,9 +24,13 @@ selected_papers: true # includes a list of selected papers
 
 ![](https://komarev.com/ghpvc/?username=TobyYang7) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftobyyang7.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-Hi, this is Toby's homepage. I am a senior undergraduate student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in **Computer Science and Engineering (Artificial Intelligence Stream)**. During my undergraduate studies, I am fortunately advised by [Prof. Benyou Wang](https://wabyking.github.io/old.html) and [Prof. Jianfeng Mao](https://sds.cuhk.edu.cn/en/teacher/268).
+Hi, this is Toby's homepage. I am a senior student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in Computer Science and Engineering. During my undergraduate studies, I am fortunately advised by [Prof. Benyou Wang](https://wabyking.github.io/old.html) and [Prof. Jianfeng Mao](https://sds.cuhk.edu.cn/en/teacher/268).
 
-I am deeply passionate about the field of deep learning and currently exploring **Graph Neural Networks (GNN) and Large Language Models (LLM).** Additionally, I am experimenting with integrating LLM with graph to explore new possibilities. I am always eager to explore new learning opportunities and engage in collaborations within the realm of deep learning and associated technologies.
+Previously, my research was focused on :
+**(1) Graph Learning, (2) Multimodal LLM, (3) Trustworthy AI.**
+Additionally, I am experimenting with integrating LLM with graph to explore new possibilities.
+
+**I am seeking a PhD or RA position for Fall 2025.** If you are interested in my research or have any questions, please feel free to contact me.
 
 <div style="text-align: center;">
     <a href="mailto:yuzheyang@link.cuhk.edu.cn">Email</a> /
