@@ -1,0 +1,349 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{glyphtounicode}
+\fi
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{bibentry}
+
+\usepackage{etoolbox}
+\usepackage{bibentry}
+
+\input{glyphtounicode}
+
+
+\usepackage[maxcitenames=999, minnames=999]{biblatex}
+\addbibresource[]{ref.bib}
+
+\usepackage{xstring}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{url} % To ensure URLs are formatted correctly
+
+\newboolean{bold}
+
+\definecolor{darkblue}{RGB}{26,13,171}
+\definecolor{gray}{RGB}{128,128,128}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,
+    urlcolor=darkblue,
+}
+
+\newcommand{\makeauthorsbold}[1]{%
+  \DeclareNameFormat{author}{%
+    \setboolean{bold}{false}%
+    \renewcommand{\do}[1]{\expandafter\ifstrequal\expandafter{\namepartfamily}{####1}{\setboolean{bold}{true}}{}}%
+    \docsvlist{#1}%
+    \ifthenelse{\value{listcount}=1}
+    {%
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\namepartfamily\addcomma\addspace \namepartgiveni\adddot}}{\namepartfamily\addcomma\addspace \namepartgiveni\adddot}}%
+    }{\ifnumless{\value{listcount}}{\value{liststop}}
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\adddot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\adddot}}%
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\adddot\addcomma\isdot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\adddot\addcomma\isdot}}%
+      }
+    \ifthenelse{\value{listcount}<\value{liststop}}
+    {\addcomma\space}{}
+  }
+}
+\makeauthorsbold{Yang, Yuzhe}
+
+\DeclareFieldFormat[article]{title}{#1\newline} % Adds a newline after the title
+
+\DeclareCiteCommand{\fullcite}
+  {\usebibmacro{prenote}}
+  {%
+    \mkbibbold{\printfield{title}}
+    \newblock
+    \printnames{author}% Use the custom name format that handles bolding
+    \newunit\newblock
+    \printfield{journaltitle}% Bold the journal title or conference name
+    \newunit\newblock
+    \printfield{year}% Print the publication year
+    \newunit\newblock
+    \printfield{volume}% Print the volume number
+    \printfield{number}% Print the issue number if available
+    \newunit\newblock
+    \printfield{pages}% Print the page range
+  }
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\pubSubheading}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\tabSubheading}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Yuzhe Yang} \\ \vspace{3pt}
+    \small (+86) 183-1076-2536 $|$ \href{mailto:yuzheyang@link.cuhk.edu.cn}{\underline{yuzheyang@link.cuhk.edu.cn}} $|$ 
+    \href{https://tobyyang7.github.io/}{\underline{homepage}} $|$ 
+    \href{https://scholar.google.com/citations?user=Oj296F8AAAAJ&hl=zh-CN}{\underline{google scholar}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{The Chinese University of Hong Kong, Shenzhen}{Shenzhen, China}
+{B.Eng. in  Computer Science and Engineering}{Sep. 2021 -- May 2025}
+\resumeProjectHeading{Advised by: Prof. Jianfeng Mao and Prof. Benyou Wang}{}
+\resumeProjectHeading{Research Interest: Graph Learning, Multimodal LLM, Trustworthy AI}{}
+% \resumeItemListStart
+% \resumeItem{Graph Learning}
+% \resumeItem{Multimodal Large Language Model}
+% \resumeItem{Trustworthy AI}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Publications-----------
+\section{Publications}
+
+\resumeSubHeadingListStart
+\pubSubheading
+  {Submitted}
+
+% \resumeItemListStart
+% \resumeItem{\fullcite{LI2024102326}}
+% \resumeItem{\fullcite{xie2024openfinllmsopenmultimodallarge}}
+% \resumeItemListEnd
+
+\begin{enumerate}
+\small
+\item \fullcite{LI2024102326} \href{https://www.sciencedirect.com/science/article/pii/S1566253524001040}{[paper]}
+\item \fullcite{xie2024openfinllmsopenmultimodallarge} \href{https://arxiv.org/abs/2408.11878}{[paper]} \href{https://huggingface.co/papers/2408.11878}{[huggingface]}
+\end{enumerate}
+
+\pubSubheading
+  {Working Paper}
+
+% \resumeItemListStart
+% \resumeItem{\fullcite{workingpaper1}}
+% \resumeItem{\fullcite{workingpaper2}}
+% \resumeItemListEnd
+
+\begin{enumerate}
+\small
+\item \fullcite{workingpaper1}
+\item \fullcite{workingpaper2}
+\end{enumerate}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{June 2020 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Information Technology Support Specialist}{Sep. 2018 -- Present}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
