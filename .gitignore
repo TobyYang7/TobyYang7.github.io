@@ -11,3 +11,4 @@ node_modules/
 vendor
 .gz
 _posts_example
+*.synctex.gz
