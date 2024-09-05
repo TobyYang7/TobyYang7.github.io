@@ -34,7 +34,7 @@ Additionally, I am experimenting with integrating LLM with graph to explore new 
 
 <div style="text-align: center;">
     <a href="mailto:yuzheyang@link.cuhk.edu.cn">Email</a> /
-    <a href="https://cuhko365-my.sharepoint.com/:b:/g/personal/121090684_link_cuhk_edu_cn/Ef7zmZwV-QdMvqcK5BHk5j4BdvAcBfwUvc2xgPvRlQBoCg?e=ySpTD3">Resume</a> /
+    <a href="https://tobyyang7.github.io/assets/pdf/yuzhe_cv.pdf">Resume</a> /
     <a href="https://github.com/TobyYang7">GitHub</a> /
     <a href="https://scholar.google.com/citations?hl=zh-CN&user=Oj296F8AAAAJ&view_op=list_works&gmla=AETOMgF_Tp1r9sOUDnRnv5h82tY7x2KspWTMX4T0-sWjkMRssLRn9LzEupX4v8OVLHfRjaW6V5dm-FNc9hgZN9A7otxAUD-SdQBPxoNUiXJdgavBzaQ">Google Scholar</a>
 </div>
