@@ -24,7 +24,7 @@ selected_papers: true # includes a list of selected papers
 
 ![](https://komarev.com/ghpvc/?username=TobyYang7) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftobyyang7.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-Hi, this is Toby's homepage. I am a senior student at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en), majoring in Computer Science and Engineering. During my undergraduate studies, I am fortunately advised by [Prof. Benyou Wang](https://wabyking.github.io/old.html) and [Prof. Jianfeng Mao](https://sds.cuhk.edu.cn/en/teacher/268). 
+Hi, this is my homepage. I am a senior student at [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), majoring in Computer Science and Engineering. During my undergraduate studies, I am fortunately advised by [Prof. Benyou Wang](https://wabyking.github.io/old.html) and [Prof. Jianfeng Mao](https://sds.cuhk.edu.cn/en/teacher/268). 
 
 Previously, my research was focused on:<br>
 **(1) Data Mining:** Spatial-Temporal Modeling, Time Series, Graph Learning,<br>

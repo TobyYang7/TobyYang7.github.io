@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Yuzhe
-middle_name:
+middle_name: 
 last_name: YANG
 email: tobyyang7@foxmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -65,7 +65,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: TobyYang7 # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: # your X handle
+x_username: Toby_Yang_7 # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: tobyyang7 # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -97,7 +97,7 @@ facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
-wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+wechat_qr: wechat-qr.png # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
   <p>Feel free to contact me if you have any questions or suggestions.</p>
