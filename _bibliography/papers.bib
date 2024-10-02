@@ -39,6 +39,15 @@ note={SOTA spatio-temporal model for predicting airport network delay propagatio
       html={https://huggingface.co/papers/2408.11878}
 }
 
+@article{wu2024feddtpt,
+  title={FedDTPT: Federated Discrete and Transferable Prompt Tuning for Black-Box Large Language Models},
+  author={Wu, Jiaqi and Chen, Simin and Yang, Yuzhe and Li, Yijiang and Hou, Shiyue and Jing, Rui and Wang, Zehua and Chen, Wei and Tian, Zijian},
+  year={2024},
+  abstract={In recent years, large language models (LLMs) have significantly advanced the field of natural language processing (NLP). By fine-tuning LLMs with data from specific scenarios, these foundation models can better adapt to various downstream tasks. However, the fine-tuning process poses privacy leakage risks, particularly in centralized data processing scenarios. To address user privacy concerns, federated learning (FL) has been introduced to mitigate the risks associated with centralized data collection from multiple sources. Nevertheless, the privacy of LLMs themselves is equally critical, as potential malicious attacks challenge their security, an issue that has received limited attention in current research. Consequently, establishing a trusted multi-party model fine-tuning environment is essential. Additionally, the local deployment of large LLMs incurs significant storage costs and high computational demands. To address these challenges, we propose for the first time a federated discrete and transferable prompt tuning, namely FedDTPT, for black-box large language models. In the client optimization phase, we adopt a token-level discrete prompt optimization method that leverages a feedback loop based on prediction accuracy to drive gradient-free prompt optimization through the MLM API. For server optimization, we employ an attention mechanism based on semantic similarity to filter all local prompt tokens, along with an embedding distance elbow detection and DBSCAN clustering strategy to enhance the filtering process. Experimental results demonstrate that, compared to state-of-the-art methods, our approach achieves higher accuracy, reduced communication overhead, and robustness to non-iid data in a black-box setting. Moreover, the optimized prompts are transferable.},
+  preview={feddtpt.png},
+  selected={true}
+}
+
 @misc{yang2024quantgpt,
   author       = {Yuzhe Yang and Kangqi Yu and Juanquan Peng},
   title        = {Quant-GPT: Money is All You Need},
