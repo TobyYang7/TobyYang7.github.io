@@ -31,7 +31,9 @@ Previously, my research was focused on:<br>
 **(2) Large Language Model:** Multimodal Reasoning & Alignment, Hallucination, Agent, <br>
 **(3) Trustworthy AI.**
 
-Additionally, I am experimenting with integrating LLM with graph to explore new possibilities. **Currently, I am seeking a PhD or RA position for 2025 Fall.** If you are interested in my research or have any questions, please feel free to contact me.
+Additionally, I am exploring the integration of LLMs with graph learning to address a broader range of real-world challenges: (1) how to leverage LLMs to develop a graph foundation model, and (2) how to design large-scale graph-based agents to simulate social phenomena within networks and financial domains. 
+
+**Currently, I am seeking a PhD or RA position for 2025 Fall.** If you are interested in my research or have any questions, please feel free to contact me.
 
 <div style="text-align: center;">
     <a href="mailto:yuzheyang@link.cuhk.edu.cn">Email</a> /
