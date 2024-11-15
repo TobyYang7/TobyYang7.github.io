@@ -75,6 +75,19 @@ bibtex_show={false},
 note={A federated prompt tuning method for black-box LLMs, enhancing privacy, efficiency, and performance on non-iid data}
 }
 
+@article{FDPT,
+title={FDPT: Federated Discrete Prompt Tuning for Black-Box Visual-Language Models},
+author={Wu, Jiaqi and Chen, Simin and Tang, Jing and Yang, Yuzhe and Wang, Lixu and Lin, Song and Wang, Zehua and Chen, Wei and Tian, Zijian},
+year={2024},
+abstract={General-purpose Vision-Language Models (VLMs) have driven major advancements in multimodal AI. Fine-tuning these models with task-specific data enhances adaptability to various downstream tasks but suffers from privacy risks. While potential solutions like federated learning can address user data privacy concerns, model protection is also essential. Other methods that rely on black-box VLM APIs usually require the access of prediction logits, leaving them open to inversion attacks. Moreover, addressing the challenges of tuning complexity and data transmission efficiency in federated VLM scenarios is also crucial. To address these challenges, we propose FDPT—a federated discrete prompt tuning method utilizing black-box VLM APIs. The black-box VLM is restricted to output text only, without relying on traditional prediction logits. In the client optimization stage, we design an AI agent-driven, token-level prompt optimization method that employs a Generate-Feedback mechanism to iteratively learn task experience. Additionally, we use an Exploration-Exploitation Balance strategy to drive a Progressive Prompt Refinement Chain-of-Thought, adaptively controlling the optimization scale. In the global aggregation stage, we propose a Semantic-similarity-guided Evolutionary Computation method, filtering local discrete tokens based on semantic similarity to enable unsupervised selection of representative tokens. Experimental results show that, compared to eight state-of-the-art methods, FDPT significantly improves accuracy in traditional image classification and visual question-answer tasks, reduces communication overhead, and produces highly transferable optimized prompts. Moreover, it demonstrates greater robustness to data heterogeneity.},
+note={A federated discrete prompt tuning method for black-box VLMs, improving accuracy and efficiency while protecting privacy},
+preview={FDPT.png},
+selected={true},
+pdf={https://tobyyang7.github.io/assets/pdf/FDPT.pdf},
+}
+
+# -------------------------------------------------------------------------------------------
+
 @misc{yang2024quantgpt,
 author       = {Yuzhe Yang and Kangqi Yu and Juanquan Peng},
 title        = {Quant-GPT: Money is All You Need},
