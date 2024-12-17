@@ -24,11 +24,11 @@ selected_papers: true # includes a list of selected papers
 
 ![](https://komarev.com/ghpvc/?username=TobyYang7) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftobyyang7.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-Hi, this is my homepage. I am a senior student at [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), majoring in Computer Science and Engineering. During my undergraduate studies, I am fortunately advised by [Prof. Benyou Wang](https://wabyking.github.io/old.html) and [Prof. Jianfeng Mao](https://sds.cuhk.edu.cn/en/teacher/268). 
+Hi, welcome to my homepage! I am a senior student at [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), majoring in Computer Science and Engineering. During my undergraduate studies, I am advised by [Prof. Benyou Wang](https://wabyking.github.io/old.html) and have collaborated closely with Prof. Honghai Yu's team from Nanjing University. Prior to that, I worked with [Prof. Jianfeng Mao](https://sds.cuhk.edu.cn/en/teacher/268).
 
 Previously, my research was focused on:<br>
 **(1) Data Mining:** Spatial-Temporal Modeling, Time Series, Graph Learning,<br>
-**(2) Large Language Model:** Multimodal Reasoning & Alignment, Hallucination, Agent, <br>
+**(2) Large Language Model:** Multimodal Reasoning & Alignment, Agent, <br>
 **(3) Trustworthy AI.**
 
 Additionally, I am exploring the integration of LLMs with graph learning to address a broader range of real-world challenges: (1) how to leverage LLMs to develop a graph foundation model, and (2) how to design large-scale graph-based agents to simulate social phenomena within networks and financial domains. 
