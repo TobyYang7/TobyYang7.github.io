@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper has been accepted to the NAACL Findings 2025. You can find the paper [here](https://arxiv.org/pdf/2410.14059).
+[One paper](https://arxiv.org/pdf/2410.14059) has been accepted to the NAACL Findings 2025.
