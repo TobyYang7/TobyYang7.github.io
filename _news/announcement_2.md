@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My first publication is accepted! You can find the paper [here](https://doi.org/10.1016/j.inffus.2024.102326).
+My first publication is accepted to Information Fusion. You can find the paper [here](https://doi.org/10.1016/j.inffus.2024.102326).
