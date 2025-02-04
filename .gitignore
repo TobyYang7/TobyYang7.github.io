@@ -12,3 +12,4 @@ vendor
 .gz
 _posts_example
 *.synctex.gz
+.DS_Store
