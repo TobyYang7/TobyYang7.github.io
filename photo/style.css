@@ -30,10 +30,10 @@ body {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Initial glow effect */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Initial glow effect */
   }
   to {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Final glow effect */
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.8); /* Final glow effect */
   }
 }
 
