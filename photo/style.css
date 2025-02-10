@@ -49,7 +49,7 @@ body {
 
 .holder {
   width: 800px;
-  height: 200px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,8 +59,8 @@ body {
 
 .panel {
   border-radius: 5px;
-  width: 90px;
-  height: 90px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   background-size: cover;
   background-position: 50% 50%;
