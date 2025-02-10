@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function () {
+            var url = window.location.href;
+
+            // 定义重定向规则
+            switch (true) {
+                // /photo 或 /photo/ -> /photo/index.html
+                case url.includes('/photo'):
+                case url.includes('/photo/'):
+                    window.location = url.replace(/\/photo\/?$/, '/photo/index.html');
+                    break;
+
+                // /TwinMarket 或 /TwinMarket/ -> /project/TwinMarket.html
+                case url.includes('/TwinMarket'):
+                case url.includes('/TwinMarket/'):
+                    window.location = url.replace(/\/TwinMarket\/?$/, '/project/TwinMarket/index.html');
+                    break;
+
+                // 如果没有匹配的规则，显示 404 页面
+                default:
+                    document.body.innerHTML = '<h1>404 - Page Not Found</h1>';
+                    break;
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+</body>
+</html>
