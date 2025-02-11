@@ -32,3 +32,24 @@ $(document).ready(function () {
     $(this).removeClass("active");
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const spinner = document.getElementById("spinner");
+  const imgFolder = "img-hdr/";
+  const imgCount = 41; // Number of images in the folder
+
+  // Create array of numbers from 1 to imgCount
+  let imageNumbers = Array.from({length: imgCount}, (_, i) => i + 1);
+  
+  // Shuffle the array
+  imageNumbers.sort(() => Math.random() - 0.5);
+
+  // Create panels with shuffled images
+  imageNumbers.forEach(num => {
+    const panel = document.createElement("div");
+    panel.className = "panel";
+    panel.style.backgroundImage = `url(${imgFolder}hdr-${num}.avif)`;
+    spinner.appendChild(panel);
+  });
+});

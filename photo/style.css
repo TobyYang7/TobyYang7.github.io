@@ -48,7 +48,7 @@ body {
 }
 
 .holder {
-  width: 800px;
+  width: 1800px;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -59,12 +59,20 @@ body {
 
 .panel {
   border-radius: 5px;
-  width: 130px;
-  height: 130px;
+  width: 50px;
+  height: 80px;
   position: absolute;
   background-size: cover;
   background-position: 50% 50%;
   transition: transform 0.5s ease-in-out, background-size 0.5s ease-in-out;
+}
+
+.panel:hover {
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  width: 60px;
+  height: 96px;
+  transform: scale(1.2);
 }
 
 .fullscreen-container {
@@ -86,7 +94,7 @@ body {
 }
 
 .pagination {
-  width: 800px;
+  width: 1800px;
   height: 44px;
   margin-top: 10px;
   text-align: center;
