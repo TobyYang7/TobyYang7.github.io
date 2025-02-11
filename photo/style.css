@@ -8,14 +8,13 @@ html, body {
 
 body {
   background: url(bg.webp);
-  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.title h1{
+.title h1 {
   font-family: 'Satisfy', cursive; 
   text-align: center;
   font-size: 75px;
@@ -30,10 +29,10 @@ body {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Initial glow effect */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   }
   to {
-    text-shadow: 0 0 40px rgba(255, 255, 255, 0.8); /* Final glow effect */
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -44,7 +43,7 @@ body {
   align-items: center;
   justify-content: center;
   transform: rotateY(calc(var(--ang) * 1deg)) translateY(-12px);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .holder {
@@ -64,12 +63,12 @@ body {
   position: absolute;
   background-size: cover;
   background-position: 50% 50%;
-  transition: transform 0.5s ease-in-out, background-size 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, border 0.5s ease-in-out;
+  will-change: transform, border;
 }
 
 .panel:hover {
-  border-radius: 5px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   width: 60px;
   height: 96px;
   transform: scale(1.2);
@@ -98,7 +97,6 @@ body {
   height: 44px;
   margin-top: 10px;
   text-align: center;
-  /* position: absolute; */
   bottom: 0;
 }
 
@@ -114,7 +112,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   border-radius: 100%;
-  transition: all 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 
 .pagination button:hover {
@@ -133,6 +131,7 @@ body {
     transform: rotateY(360deg);
   }
 }
+
 .fade {
   background: #0006;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
