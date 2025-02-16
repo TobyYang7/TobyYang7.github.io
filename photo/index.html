@@ -2,46 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <title>Photo Gallery @tobyyang</title>
+    <title>Photo Gallery - Yuzhe Yang</title>
 </head>
 <body>
-<div class="title">
-  <h1>Photo Gallery
-    <span style="font-size: 20px; line-height: 1.2; display: block; margin-top: 5px;">@tobyyang</span>
-  </h1>
-</div>
-  <div class="holder">  
-      <div class="spinner" id="spinner">
-        <!-- Panels will be dynamically generated here -->
-        <div class="fade"></div>
-      </div>
-    </div>
-    <div class="pagination">
-      <button type="button" id="prev">&#8592;</button>
-      <button type="button" id="next">&#8594;</button>
-    </div>
-    <div class="fullscreen-container"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-<div style="text-align: center; color: rgb(255, 255, 255); padding: 20px; margin-top: 20px; border-top: 1px solid #ffffff; font-family: 'Helvetica Neue', sans-serif; font-size: 14px;">
-  <a href="https://tobyyang7.github.io/" style="color: white;">Home</a> / <a href="https://unsplash.com/@tobyyang" style="color: white;">Unsplash</a>
-  <br>
-  <br>
-  <img src="https://img.shields.io/github/last-commit/tobyyang7/tobyyang7.github.io?style=flat-square" alt="Last Updated">
+    <section id="hero" class="section">
+        <h1 class="title">Photo<br>Gallery</h1>
+        <h1 class="text">Inspiration<br>comes<br>of working.</h1>
+        <nav class="navigation">
+            <a href="/">Home</a>
+            <a href="https://unsplash.com/@tobyyang" target="_blank">Unsplash</a>
+        </nav>
+        <div class="credit">
+            <p>by Toby Yang</p>
+        </div></div>
+        <div class="scroll-arrow">
+            <i></i>
+        </div>
+    </section>
 
-</div>
+    <section class="gallery-section">
+        <!-- Gallery items will be dynamically added here -->
+    </section>
+
+    <div class="lightbox">
+        <img src="" alt="Enlarged photo">
+    </div>
+
+    <script>
+        // Blur effect on scroll
+        window.addEventListener('scroll', () => {
+            const hero = document.getElementById('hero');
+            const scrollPosition = window.scrollY;
+            const blurValue = Math.min(scrollPosition / 1000, 15);
+            hero.style.filter = `blur(${blurValue}px)`;
+        });
+
+        // Load and display gallery images
+        async function loadGallery() {
+            const gallerySection = document.querySelector('.gallery-section');
+            const imageUrls = Array.from({length: 40}, (_, i) => `img-hdr/hdr-${i + 2}.avif`);
+            
+            // Shuffle the array
+            const shuffledUrls = [...imageUrls].sort(() => Math.random() - 0.5);
+
+            shuffledUrls.forEach(url => {
+            const div = document.createElement('div');
+            div.className = 'gallery-item';
+            
+            const img = document.createElement('img');
+            img.src = url;
+            img.alt = 'Gallery image';
+            
+            div.appendChild(img);
+            gallerySection.appendChild(div);
+            });
+        }
+
+        // Lightbox functionality
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        document.querySelector('.gallery-section').addEventListener('click', (e) => {
+            const galleryItem = e.target.closest('.gallery-item');
+            if (galleryItem) {
+                const img = galleryItem.querySelector('img');
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'block';
+            }
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        // Initialize gallery
+        loadGallery();
+    </script>
 </body>
 </html>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE837RNHM5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YE837RNHM5');
-</script>
