@@ -45,16 +45,16 @@ html, body {
     position: absolute;
     top: 80px;
     left: 100px;
-    color: #d37676;
+    color: #c05959;
     line-height: 0.8; /* Added this line to reduce space between lines */
 }
 
 .text {
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: Arial Black, Arial Bold, Arial, sans-serif;
     font-weight: 900;
     position: absolute;
-    bottom:80px;
+    bottom:40px;
     right: 100px;
     color: #89a3ce;
     line-height: 0.8; /* Added this line to reduce space between lines */

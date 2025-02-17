@@ -52,7 +52,7 @@
         // Load and display gallery images
         async function loadGallery() {
             const gallerySection = document.querySelector('.gallery-section');
-            const imageUrls = Array.from({length: 40}, (_, i) => `img-hdr/hdr-${i + 2}.avif`);
+            const imageUrls = Array.from({length: 44}, (_, i) => `img-hdr/hdr-${i + 2}.avif`);
             
             // Shuffle the array
             const shuffledUrls = [...imageUrls].sort(() => Math.random() - 0.5);
